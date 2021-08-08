@@ -10,15 +10,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target-node: [10, 12, 14, 16]
-        target-arch: [x64, arm64, armv7]
+        target-node: [12]
+        target-arch: [armv7]
         include:
-          - target-arch: x64
-            target-triple: x86_64-linux-musl
-            host-arch: x86_64
-          - target-arch: arm64
-            target-triple: aarch64-linux-musl
-            host-arch: x86_64
           - target-arch: armv7
             target-triple: armv7l-linux-musleabihf
             host-arch: i686
