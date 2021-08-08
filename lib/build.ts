@@ -37,9 +37,9 @@ function getConfigureArgs(major: number, targetPlatform: string): string[] {
     args.push('--partly-static');
   }
 
-  if (targetPlatform === 'linuxstatic') {
-    args.push('--fully-static');
-  }
+  // if (targetPlatform === 'linuxstatic') {
+  //   args.push('--fully-static');
+  // }
 
   // Link Time Optimization
   if (major >= 12) {
